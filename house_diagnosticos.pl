@@ -44,7 +44,7 @@ clause(doenca(doenca_de_chagas) if
 % Doença: Zika Virus
 clause(doenca(zika_virus) if 
     apresenta('febre') and 
-    apresenta('manchas vermelhas na pele (podendo apresentar coceira)') and 
+    apresenta('manchas vermelhas na pele') and 
     apresenta('vermelhidão nos olhos') and 
     apresenta('dor de cabeça')).
 
@@ -230,14 +230,92 @@ clause(doenca(anemia) if
     apresenta('enfraquecimento dos cabelos e unhas')).
 
 
+
 solve(true).
 solve(X and Y) :- solve(X), solve(Y).
 solve(X) :- clause(X if Y), solve(Y).
 
-question :- write('apresenta pele?\n'), read(yes), asserta(clause(apresenta(pele) if true)).
-question :- write('late?\n'), read(yes), asserta(clause(late if true)).
-question :- write('mia?\n'), read(yes), asserta(clause(mia if true)).
-question :- write('apresenta asas?\n'), read(yes), asserta(clause(apresenta(asas) if true)).
-question :- write('faz quack?\n'), read(yes), asserta(clause(faz(quack) if true)).
 
-expert(X) :- question, solve(animal(X)).
+question :- write('apresenta febre?\n'), read(yes), asserta(clause(apresenta('febre') if true)).
+question :- write('apresenta calafrios?\n'), read(yes), asserta(clause(apresenta('calafrios') if true)).
+question :- write('apresenta tosse?\n'), read(yes), asserta(clause(apresenta('tosse') if true)).
+question :- write('apresenta dor de garganta?\n'), read(yes), asserta(clause(apresenta('dor de garganta') if true)).
+question :- write('apresenta dor de cabeça?\n'), read(yes), asserta(clause(apresenta('dor de cabeça') if true)).
+question :- write('apresenta congestão nasal (coriza)?\n'), read(yes), asserta(clause(apresenta('congestão nasal (coriza)') if true)).
+question :- write('apresenta problemas no olfato ou no paladar?\n'), read(yes), asserta(clause(apresenta('problemas no olfato ou no paladar') if true)).
+question :- write('apresenta dores musculares com dor lombar proeminente?\n'), read(yes), asserta(clause(apresenta('dores musculares com dor lombar proeminente') if true)).
+question :- write('apresenta perda de apetite?\n'), read(yes), asserta(clause(apresenta('perda de apetite') if true)).
+question :- write('apresenta náusea ou vômito?\n'), read(yes), asserta(clause(apresenta('náusea ou vômito') if true)).
+question :- write('apresenta hiperemia conjuntival?\n'), read(yes), asserta(clause(apresenta('hiperemia conjuntival') if true)).
+question :- write('apresenta dor muscular e articular?\n'), read(yes), asserta(clause(apresenta('dor muscular e articular') if true)).
+question :- write('apresenta mal-estar?\n'), read(yes), asserta(clause(apresenta('mal-estar') if true)).
+question :- write('apresenta dores abdominais?\n'), read(yes), asserta(clause(apresenta('dores abdominais') if true)).
+question :- write('apresenta vômito?\n'), read(yes), asserta(clause(apresenta('vômito') if true)).
+question :- write('apresenta diarreia?\n'), read(yes), asserta(clause(apresenta('diarreia') if true)).
+question :- write('apresenta mal estar?\n'), read(yes), asserta(clause(apresenta('mal estar') if true)).
+question :- write('apresenta falta de apetite?\n'), read(yes), asserta(clause(apresenta('falta de apetite') if true)).
+question :- write('apresenta edemas (inchaço)?\n'), read(yes), asserta(clause(apresenta('edemas (inchaço)') if true)).
+question :- write('apresenta aumento do baço e do fígado?\n'), read(yes), asserta(clause(apresenta('aumento do baço e do fígado') if true)).
+question :- write('apresenta distúrbios cardíacos?\n'), read(yes), asserta(clause(apresenta('distúrbios cardíacos') if true)).
+question :- write('apresenta manchas vermelhas na pele?\n'), read(yes), asserta(clause(apresenta('manchas vermelhas na pele') if true)).
+question :- write('apresenta vermelhidão nos olhos?\n'), read(yes), asserta(clause(apresenta('vermelhidão nos olhos') if true)).
+question :- write('apresenta dor ao movimentar os olhos?\n'), read(yes), asserta(clause(apresenta('dor ao movimentar os olhos') if true)).
+question :- write('apresenta manchas vermelhas e bolhas no corpo?\n'), read(yes), asserta(clause(apresenta('manchas vermelhas e bolhas no corpo') if true)).
+question :- write('apresenta falta de ar?\n'), read(yes), asserta(clause(apresenta('falta de ar') if true)).
+question :- write('apresenta chiado no peito?\n'), read(yes), asserta(clause(apresenta('chiado no peito') if true)).
+question :- write('apresenta cansaço?\n'), read(yes), asserta(clause(apresenta('cansaço') if true)).
+question :- write('apresenta dor ao mastigar e engolir?\n'), read(yes), asserta(clause(apresenta('dor ao mastigar e engolir') if true)).
+
+
+
+question :- write('apresenta sensação de mal estar geral?\n'), read(yes), asserta(clause(apresenta('sensação de mal estar geral') if true)).
+question :- write('apresenta dores vagas e/ou generalizadas pelo corpo?\n'), read(yes), asserta(clause(apresenta('dores vagas e/ou generalizadas pelo corpo') if true)).
+question :- write('apresenta linfoadenopatia (inchaço dos gânglios linfáticos)?\n'), read(yes), asserta(clause(apresenta('linfoadenopatia (inchaço dos gânglios linfáticos)' ) if true)).
+question :- write('apresenta inchaço e dor nas glândulas salivares?\n'), read(yes), asserta(clause(apresenta('inchaço e dor nas glândulas salivares') if true)).
+question :- write('apresenta fadiga e fraqueza?\n'), read(yes), asserta(clause(apresenta('fadiga e fraqueza') if true)).
+question :- write('apresenta manchas avermelhadas espalhadas pelo corpo?\n'), read(yes), asserta(clause(apresenta('manchas avermelhadas espalhadas pelo corpo') if true)).
+question :- write('apresenta coriza e nariz entupido?\n'), read(yes), asserta(clause(apresenta('coriza e nariz entupido') if true)).
+question :- write('apresenta dor ao engolir?\n'), read(yes), asserta(clause(apresenta('dor ao engolir') if true)).
+question :- write('apresenta olhos avermelhados e inflamados?\n'), read(yes), asserta(clause(apresenta('olhos avermelhados e inflamados') if true)).
+question :- write('apresenta nódulos e gânglios linfáticos inchados?\n'), read(yes), asserta(clause(apresenta('nódulos e gânglios linfáticos inchados') if true)).
+question :- write('apresenta sudorese noturna?\n'), read(yes), asserta(clause(apresenta('sudorese noturna') if true)).
+question :- write('apresenta emagrecimento?\n'), read(yes), asserta(clause(apresenta('emagrecimento') if true)).
+question :- write('apresenta sensação de falta de ar?\n'), read(yes), asserta(clause(apresenta('sensação de falta de ar') if true)).
+question :- write('apresenta ansiedade?\n'), read(yes), asserta(clause(apresenta('ansiedade') if true)).
+question :- write('apresenta distúrbios do sono?\n'), read(yes), asserta(clause(apresenta('distúrbios do sono') if true)).
+question :- write('apresenta alterações de apetite?\n'), read(yes), asserta(clause(apresenta('alterações de apetite') if true)).
+question :- write('apresenta sentimentos de culpa ou baixa auto-estima?\n'), read(yes), asserta(clause(apresenta('sentimentos de culpa ou baixa auto-estima') if true)).
+question :- write('apresenta falta de concentração?\n'), read(yes), asserta(clause(apresenta('falta de concentração') if true)).
+question :- write('apresenta tonturas?\n'), read(yes), asserta(clause(apresenta('tonturas') if true)).
+question :- write('apresenta vertigens (sensação de giro ou desequilíbrio)?\n'), read(yes), asserta(clause(apresenta('vertigens (sensação de giro ou desequilíbrio)' ) if true)).
+question :- write('apresenta diarreia?\n'), read(yes), asserta(clause(apresenta('diarreia') if true)).
+question :- write('apresenta dor nas articulações?\n'), read(yes), asserta(clause(apresenta('dor nas articulações') if true)).
+question :- write('apresenta vermelhidão ou hemorragia conjuntival?\n'), read(yes), asserta(clause(apresenta('vermelhidão ou hemorragia conjuntival') if true)).
+question :- write('apresenta fotofobia?\n'), read(yes), asserta(clause(apresenta('fotofobia') if true)).
+question :- write('apresenta dor ocular?\n'), read(yes), asserta(clause(apresenta('dor ocular') if true)).
+question :- write('apresenta exantema (rash cutâneo)?\n'), read(yes), asserta(clause(apresenta('exantema (rash cutâneo)' ) if true)).
+question :- write('apresenta aumento de linfonodos?\n'), read(yes), asserta(clause(apresenta('aumento de linfonodos') if true)).
+question :- write('apresenta contratura da mandíbula?\n'), read(yes), asserta(clause(apresenta('contratura da mandíbula') if true)).
+question :- write('apresenta dificuldade para engolir?\n'), read(yes), asserta(clause(apresenta('dificuldade para engolir') if true)).
+question :- write('apresenta agitação?\n'), read(yes), asserta(clause(apresenta('agitação') if true)).
+question :- write('apresenta irritabilidade?\n'), read(yes), asserta(clause(apresenta('irritabilidade') if true)).
+question :- write('apresenta rigidez de pescoço, braços ou pernas?\n'), read(yes), asserta(clause(apresenta('rigidez de pescoço, braços ou pernas') if true)).
+question :- write('apresenta arqueamento das costas (opistótono)?\n'), read(yes), asserta(clause(apresenta('arqueamento das costas (opistótono)' ) if true)).
+question :- write('apresenta manchas pruriginosas, descamativas ou que sangram?\n'), read(yes), asserta(clause(apresenta('manchas pruriginosas, descamativas ou que sangram' ) if true)).
+
+
+question :- write('apresenta sinais ou pintas que mudam de tamanho, forma ou cor?\n'), read(yes), asserta(clause(apresenta('sinais ou pintas que mudam de tamanho forma ou cor') if true)).
+question :- write('apresenta feridas que não cicatrizam em 4 semanas?\n'), read(yes), asserta(clause(apresenta('feridas que nao cicatrizam em 4 semanas') if true)).
+question :- write('apresenta dificuldade de urinar?\n'), read(yes), asserta(clause(apresenta('dificuldade de urinar') if true)).
+question :- write('apresenta demora em começar e terminar de urinar?\n'), read(yes), asserta(clause(apresenta('demora em comecar e terminar de urinar') if true)).
+question :- write('apresenta sangue na urina?\n'), read(yes), asserta(clause(apresenta('sangue na urina') if true)).
+question :- write('apresenta diminuição do jato de urina?\n'), read(yes), asserta(clause(apresenta('diminuicao do jato de urina') if true)).
+question :- write('apresenta necessidade de urinar mais vezes durante o dia ou à noite?\n'), read(yes), asserta(clause(apresenta('necessidade de urinar mais vezes durante o dia ou a noite') if true)).
+question :- write('apresenta retrações de pele e do mamilo?\n'), read(yes), asserta(clause(apresenta('retracoes de pele e do mamilo') if true)).
+question :- write('apresenta saída de secreção aquosa ou sanguinolenta pelo mamilo?\n'), read(yes), asserta(clause(apresenta('saida de secrecao aquosa ou sanguinolenta pelo mamilo') if true)).
+question :- write('apresenta vermelhidão da pele da mama?\n'), read(yes), asserta(clause(apresenta('vermelhidao da pele da mama') if true)).
+question :- write('apresenta nódulos palpáveis?\n'), read(yes), asserta(clause(apresenta('nodulos palpaveis') if true)).
+
+
+
+expert(X) :- question, solve(doenca(X)).

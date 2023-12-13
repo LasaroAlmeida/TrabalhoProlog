@@ -1,0 +1,203 @@
+1- covid:
+febre;
+calafrios;
+tosse;
+dor de garganta;
+dor de cabeça;
+congestão nasal (coriza);
+problemas no olfato ou no paladar.
+
+2- febre amarela:
+febre;
+dores musculares com dor lombar proeminente;
+dor de cabeça;
+perda de apetite;
+náusea ou vômito.
+
+3- febre maculosa:
+Febre;
+Cefaleia;
+Hiperemia conjuntival;
+Dor muscular e articular;
+Mal-estar;
+Dores abdominais;
+Vômito;
+Diarreia;
+
+4- doença de chagas
+febre;
+mal estar;
+falta de apetite;
+edemas (inchaço) localizados na pálpebra ou em outras partes do corpo;
+aumento do baço e do fígado;
+distúrbios cardíacos.
+
+8- Zika Virus
+febre;
+manchas vermelhas na pele (podendo apresentar coceira);
+vermelhidão nos olhos;
+dor de cabeça.
+
+9- Dengue:
+Febre;
+Dores musculares intensas.
+Dor ao movimentar os olhos.
+Mal estar.
+Falta de apetite.
+Dor de cabeça.
+Manchas vermelhas no corpo.
+
+10- Ebola:
+Febre;
+Cefaleia;
+Fraqueza;
+Diarreia;
+Vômitos;
+Dor abdominal;
+Inapetência;
+Odinofagia;
+
+11- Raiva
+Febre;
+cefaléia (dor de cabeça difusa);
+tontura 
+sensação de mal estar geral; 
+com dores vagas e/ou generalizadas pelo corpo. a
+lguns casos apresentam linfoadenopatia por vezes dolorosas à palpação.
+
+14- Caxumba:
+Febre;
+Inchaço e dor nas glândulas salivares, podendo ser em ambos os lados ou em apenas um deles;
+Dor de cabeça;
+Fadiga e fraqueza;
+Perda de apetite;
+Dor ao mastigar e engolir.
+
+15- Catapora
+manchas vermelhas e bolhas no corpo;
+mal estar;
+cansaço;
+dor de cabeça;
+perda de apetite;
+febre baixa.
+
+20- bronquite
+Falta de ar.
+Chiado no peito.
+Calafrios e febre.
+Tosse seca ou com expectoração.
+
+23 - Hepatite
+cansaço; 
+febre; 
+mal-estar; 
+tontura; 
+enjoo; 
+vômitos; 
+dor abdominal; 
+pele e olhos amarelados; 
+urina escura;
+fezes claras.
+
+24- Sarampo:
+febre;
+mal-estar;
+coriza;
+irritação ocular;
+tosse e falta de apetite e dura até quatro dias após o aparecimento das manchas vermelhas.
+
+25- Tuberculose
+Tosse seca
+Febre
+Sudorese noturna;
+Emagrecimento;
+Cansaço/fadiga;
+Falta de apetite;
+Sensação de falta de ar.
+
+5- Depressão
+ansiedade,
+distúrbios do sono;
+de apetite;
+podem ter sentimentos de culpa ou baixa auto-estima;
+falta de concentração e até mesmo aqueles que são clinicamente inexplicáveis.
+
+6- labirintite
+tonturas;
+vertigens. 
+Na vertigem, a sensação é que o ambiente gira ao redor do corpo, ou que o corpo roda em relação ao ambiente. Na tontura, a sensação é de desequilíbrio, instabilidade, de pisar no vazio, de queda.
+
+7- Leptospirose:
+diarreia;
+dor nas articulações;
+vermelhidão ou hemorragia conjuntival;
+fotofobia; 
+dor ocular; 
+tosse; 
+mais raramente podem manifestar exantema;
+aumento do fígado e/ou baço;
+aumento de linfonodos;
+sufusão conjuntival.
+
+
+23- rubéola
+
+febre;
+surgimento de manchas avermelhadas rosadas espalhadas pelo corpo, que surgem inicialmente no rosto e depois se espalham;
+dor de cabeça;
+coriza e nariz entupido;
+dor ao engolir;
+olhos avermelhados e inflamados;
+nódulos e gânglios linfáticos inchados na região da nuca, pescoço e atrás das orelhas;
+dor muscular e nas articulações; e
+mal-estar.
+
+12- Desidratação
+mal-estar;
+fraqueza; 
+sonolência;
+irritabilidade; 
+dificuldade de atenção;
+sensação de fome quando na verdade é sede;
+dor de cabeça, principalmente pela manhã; e.
+tontura ao levantar-se da posição sentada ou deitada (hipotensão postural).
+
+13- Tétano:
+Contratura da mandíbula (mais frequente)
+Dificuldade para engolir.
+Agitação.
+Irritabilidade.
+Rigidez de pescoço, braços, ou pernas.
+Arqueamento das costas (opistótono)
+Cefaleia.
+Dor de garganta.
+
+
+16- cancer de pele
+Manchas pruriginosas (que coçam), descamativas ou que sangram;
+Sinais ou pintas que mudam de tamanho, forma ou cor;
+Feridas que não cicatrizam em 4 semanas.
+
+17- cancer de prostata
+dificuldade de urinar;
+demora em começar e terminar de urinar;
+sangue na urina;
+diminuição do jato de urina;
+necessidade de urinar mais vezes durante o dia ou à noite.
+
+18- cancer de mama
+retrações de pele e do mamilo que deixam a mama com aspecto de casca de laranja;
+saída de secreção aquosa ou sanguinolenta pelo mamilo, chegando até a sujar o sutiã;
+vermelhidão da pele da mama;
+pequenos nódulos palpáveis nas axilas e/ou pescoço
+
+19- anemia
+fraqueza; indisposição; 
+falta de ar; 
+tontura; 
+palpitação; 
+cefaleia; 
+palidez de pele e mucosas; 
+enfraquecimento dos cabelos e unhas;
+
+

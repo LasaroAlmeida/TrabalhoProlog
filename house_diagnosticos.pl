@@ -264,9 +264,6 @@ question :- write('apresenta chiado no peito?\n'), read(yes), asserta(clause('ch
 question :- write('apresenta cansaço?\n'), read(yes), asserta(clause('cansaço' if true)).
 question :- write('apresenta dor ao mastigar?\n'), read(yes), asserta(clause('dor ao mastigar' if true)).
 question :- write('apresenta dor abdominal?\n'), read(yes), asserta(clause('dor abdominal' if true)).
-
-
-
 question :- write('apresenta dores no corpo?\n'), read(yes), asserta(clause('dores no corpo' if true)).
 question :- write('apresenta linfoadenopatia (inchaço dos gânglios linfáticos)?\n'), read(yes), asserta(clause('linfoadenopatia (inchaço dos gânglios linfáticos)'  if true)).
 question :- write('apresenta inchaço e dor nas glândulas salivares?\n'), read(yes), asserta(clause('inchaço e dor nas glândulas salivares' if true)).
@@ -301,8 +298,6 @@ question :- write('apresenta irritabilidade?\n'), read(yes), asserta(clause('irr
 question :- write('apresenta rigidez de pescoço, braços ou pernas?\n'), read(yes), asserta(clause('rigidez de pescoço, braços ou pernas' if true)).
 question :- write('apresenta arqueamento das costas (opistótono)?\n'), read(yes), asserta(clause('arqueamento das costas (opistótono)'  if true)).
 question :- write('apresenta manchas pruriginosas, descamativas ou que sangram?\n'), read(yes), asserta(clause('manchas pruriginosas, descamativas ou que sangram'  if true)).
-
-
 question :- write('apresenta sinais ou pintas que mudam de tamanho, forma ou cor?\n'), read(yes), asserta(clause('sinais ou pintas que mudam de tamanho, forma ou cor' if true)).
 question :- write('apresenta feridas que não cicatrizam em 4 semanas?\n'), read(yes), asserta(clause('feridas que não cicatrizam em 4 semanas' if true)).
 question :- write('apresenta dificuldade de urinar?\n'), read(yes), asserta(clause('dificuldade de urinar' if true)).
@@ -319,6 +314,11 @@ question :- write('apresenta palpitação?\n'), read(yes), asserta(clause('palpi
 question :- write('apresenta palidez de pele e mucosas?\n'), read(yes), asserta(clause('palidez de pele e mucosas' if true)).
 question :- write('apresenta penfraquecimento dos cabelos e unhas?\n'), read(yes), asserta(clause('penfraquecimento dos cabelos e unhas' if true)).
 
-especialista(X) :-
-    question,
-    solve(doenca(X)).
+imprimir_sintomas(Diagnostico) :-
+    sintomas_da_doenca(Diagnostico, Sintomas),
+    format('Seu diagnóstico é: ~w~n', Diagnostico),
+    format('Você foi diagnosticado a partir dos seguintes sintomas da doenca: ~w~n', Sintomas).
+
+
+especialista(X) :- question, solve(doenca(X)), imprimir_sintomas(X).
+

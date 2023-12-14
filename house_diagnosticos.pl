@@ -6,7 +6,12 @@
 % Doença: COVID-19
 clause(doenca(covid) if 
     'febre' and 
-    'calafrios').
+    'calafrios' and 
+    'tosse' and 
+    'dor de garganta' and 
+    'dor de cabeça' and 
+    'congestão nasal' and 
+    'problemas no olfato ou no paladar').
 
 % Doença: Febre Amarela
 clause(doenca(febre_amarela) if 
@@ -228,9 +233,6 @@ clause(doenca(anemia) if
     'palidez de pele e mucosas' and 
     'enfraquecimento dos cabelos e unhas').
 
-sintomas_da_doenca(Doenca, Sintomas) :-
-    clause(doenca(Doenca) if Sintomas).
-
 solve(true).
 solve(X and Y) :- solve(X), solve(Y).
 solve(X) :- clause(X if Y), solve(Y).
@@ -317,9 +319,6 @@ question :- write('apresenta palpitação?\n'), read(yes), asserta(clause('palpi
 question :- write('apresenta palidez de pele e mucosas?\n'), read(yes), asserta(clause('palidez de pele e mucosas' if true)).
 question :- write('apresenta penfraquecimento dos cabelos e unhas?\n'), read(yes), asserta(clause('penfraquecimento dos cabelos e unhas' if true)).
 
-imprimir_sintomas(Diagnostico) :-
-    sintomas_da_doenca(Diagnostico, Sintomas),
-    format('Sintomas da doenca diagnosticada: ~w~n', [Sintomas]).
-
-
-especialista(X) :- question, solve(doenca(X)), imprimir_sintomas(X).
+especialista(X) :-
+    question,
+    solve(doenca(X)).

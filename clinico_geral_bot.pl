@@ -1,3 +1,6 @@
+%Dener Luis Basilio Theodoro, 201835001
+%Lásaro de Almeida Deodoro, 201835004
+
 :- op(800, yfx, if).
 :- op(200, xfy, and).
 
@@ -244,8 +247,8 @@ question :- write('apresenta tosse?\n'), read(yes), asserta(clause('tosse' if tr
 question :- write('apresenta dor de garganta?\n'), read(yes), asserta(clause('dor de garganta' if true)).
 question :- write('apresenta dor de cabeça?\n'), read(yes), asserta(clause('dor de cabeça' if true)).
 question :- write('apresenta congestão nasal?\n'), read(yes), asserta(clause('congestão nasal' if true)).
-question :- write('apresenta problemas no olfato ou no paladar?\n'), read(yes), asserta(clause('problemas no olfato ou no paladar' if true)).
 question :- write('apresenta dores musculares?\n'), read(yes), asserta(clause('dores musculares' if true)).
+question :- write('apresenta problemas no olfato ou no paladar?\n'), read(yes), asserta(clause('problemas no olfato ou no paladar' if true)).
 question :- write('apresenta perda de apetite?\n'), read(yes), asserta(clause('perda de apetite' if true)).
 question :- write('apresenta vômito?\n'), read(yes), asserta(clause('vômito' if true)).
 question :- write('apresenta inflamação nos olhos (conjuntivite)?\n'), read(yes), asserta(clause('inflamação nos olhos (conjuntivite)' if true)).

@@ -6,7 +6,7 @@
 
 :- dynamic clause/1.
 
-% Doença: COVID-19
+% 1 - Doença: COVID-19
 clause(doenca(covid) if 
     'febre' and 
     'calafrios' and 
@@ -16,7 +16,7 @@ clause(doenca(covid) if
     'congestão nasal' and 
     'problemas no olfato ou no paladar').
 
-% Doença: Febre Amarela
+% 2 - Doença: Febre Amarela
 clause(doenca(febre_amarela) if 
     'febre' and 
     'dores musculares' and 
@@ -24,7 +24,7 @@ clause(doenca(febre_amarela) if
     'perda de apetite' and 
     'vômito').
 
-% Doença: Febre Maculosa
+% 3 - Doença: Febre Maculosa
 clause(doenca(febre_maculosa) if 
     'febre' and 
     'dor de cabeça' and 
@@ -35,7 +35,7 @@ clause(doenca(febre_maculosa) if
     'vômito' and 
     'diarreia').
 
-% Doença: Doença de Chagas
+% 4 - Doença: Doença de Chagas
 clause(doenca(doenca_de_chagas) if 
     'febre' and 
     'mal estar' and 
@@ -44,14 +44,14 @@ clause(doenca(doenca_de_chagas) if
     'aumento do baço e do fígado' and 
     'distúrbios cardíacos').
 
-% Doença: Zika Virus
+% 5 - Doença: Zika Virus
 clause(doenca(zika_virus) if 
     'febre' and 
     'manchas vermelhas na pele' and 
     'inflamação nos olhos (conjuntivite)' and 
     'dor de cabeça').
 
-% Doença: Dengue
+% 6 - Doença: Dengue
 clause(doenca(dengue) if 
     'febre' and 
     'dores musculares' and 
@@ -61,7 +61,7 @@ clause(doenca(dengue) if
     'dor de cabeça' and 
     'manchas vermelhas na pele').
 
-% Doença: Ebola
+% 7 - Doença: Ebola
 clause(doenca(ebola) if 
     'febre' and 
     'dor de cabeça' and 
@@ -72,7 +72,7 @@ clause(doenca(ebola) if
     'falta de apetite' and 
     'dor ao engolir').
 
-% Doença: Raiva
+% 8 - Doença: Raiva
 clause(doenca(raiva) if 
     'febre' and 
     'dor de cabeça' and 
@@ -81,7 +81,7 @@ clause(doenca(raiva) if
     'dores no corpo' and 
     'linfoadenopatia (inchaço dos gânglios linfáticos)').
 
-% Doença: Caxumba
+% 9 - Doença: Caxumba
 clause(doenca(caxumba) if 
     'febre' and 
     'inchaço e dor nas glândulas salivares' and 
@@ -92,7 +92,7 @@ clause(doenca(caxumba) if
     'dor ao mastigar' and 
     'dor ao engolir').
 
-% Doença: Catapora
+% 10 - Doença: Catapora
 clause(doenca(catapora) if 
     'manchas vermelhas na pele' and 
     'bolhas no corpo' and 
@@ -102,7 +102,7 @@ clause(doenca(catapora) if
     'perda de apetite' and 
     'febre').
 
-% Doença: Bronquite
+% 11 - Doença: Bronquite
 clause(doenca(bronquite) if 
     'falta de ar' and 
     'chiado no peito' and 
@@ -110,7 +110,7 @@ clause(doenca(bronquite) if
     'febre' and 
     'tosse').
 
-% Doença: Hepatite
+% 12 - Doença: Hepatite
 clause(doenca(hepatite) if 
     'fadiga' and 
     'febre' and 
@@ -123,7 +123,7 @@ clause(doenca(hepatite) if
     'urina escura' and 
     'fezes claras').
 
-% Doença: Sarampo
+% 13 - Doença: Sarampo
 clause(doenca(sarampo) if 
     'febre' and 
     'mal estar' and 
@@ -133,7 +133,7 @@ clause(doenca(sarampo) if
     'falta de apetite' and 
     'manchas vermelhas na pele').
 
-% Doença: Tuberculose
+% 14 - Doença: Tuberculose
 clause(doenca(tuberculose) if 
     'tosse' and 
     'febre' and 
@@ -143,7 +143,7 @@ clause(doenca(tuberculose) if
     'falta de apetite' and 
     'falta de ar').
 
-% Doença: Depressão
+% 15 - Doença: Depressão
 clause(doenca(depressao) if 
     'ansiedade' and 
     'distúrbios do sono' and 
@@ -152,12 +152,12 @@ clause(doenca(depressao) if
     'falta de concentração').
 
 
-% Doença: Labirintite
+% 16 - Doença: Labirintite
 clause(doenca(labirintite) if 
     'tontura' and 
     'vertigens').
     
-% Doença: Leptospirose
+% 17 - Doença: Leptospirose
 clause(doenca(leptospirose) if 
     'diarreia' and 
     'dores nas articulações' and 
@@ -169,7 +169,7 @@ clause(doenca(leptospirose) if
     'aumento do baço e do fígado' and 
     'linfoadenopatia (inchaço dos gânglios linfáticos)').
 
-% Doença: Rubéola
+% 18 - Doença: Rubéola
 clause(doenca(rubeola) if 
     'febre' and 
     'manchas vermelhas na pele' and 
@@ -182,7 +182,7 @@ clause(doenca(rubeola) if
     'dores nas articulações' and 
     'mal estar').
 
-% Doença: Desidratação
+% 19 - Doença: Desidratação
 clause(doenca(desidratacao) if 
     'mal estar' and 
     'fraqueza' and 
@@ -193,7 +193,7 @@ clause(doenca(desidratacao) if
     'dor de cabeça' and 
     'tontura ao levantar-se da posição sentada ou deitada (hipotensão postural)').
 
-% Doença: Tétano
+% 20 - Doença: Tétano
 clause(doenca(tetano) if 
     'contratura da mandíbula' and 
     'dificuldade para engolir' and 
@@ -204,13 +204,13 @@ clause(doenca(tetano) if
     'dor de cabeça' and 
     'dor de garganta').
 
-% Doença: Câncer de Pele
+% 21 - Doença: Câncer de Pele
 clause(doenca(cancer_de_pele) if 
     'erupções na pele' and 
     'sinais ou pintas que mudam de tamanho, forma ou cor' and 
     'feridas que não cicatrizam em 4 semanas').
 
-% Doença: Câncer de Próstata
+% 22 - Doença: Câncer de Próstata
 clause(doenca(cancer_de_prostata) if 
     'dificuldade de urinar' and 
     'demora em começar e terminar de urinar' and 
@@ -218,14 +218,14 @@ clause(doenca(cancer_de_prostata) if
     'diminuição do jato de urina' and 
     'necessidade de urinar mais vezes durante o dia ou à noite').
 
-% Doença: Câncer de Mama
+% 23 - Doença: Câncer de Mama
 clause(doenca(cancer_de_mama) if 
     'retrações de pele e do mamilo' and 
     'saída de secreção aquosa ou sanguinolenta pelo mamilo' and 
     'vermelhidão da pele da mama' and 
     'pequenos nódulos palpáveis nas axilas e/ou pescoço').
 
-% Doença: Anemia
+% 24 - Doença: Anemia
 clause(doenca(anemia) if 
     'fraqueza' and 
     'indisposição' and 

@@ -21,7 +21,7 @@ clause(doenca(febre_amarela) if
     'febre' and 
     'dores musculares' and 
     'dor de cabeça' and 
-    'perda de apetite' and 
+    'falta de apetite' and 
     'vômito').
 
 % 3 - Doença: Febre Maculosa
@@ -88,7 +88,7 @@ clause(doenca(caxumba) if
     'dor de cabeça' and 
     'fadiga' and 
     'fraqueza' and 
-    'perda de apetite' and 
+    'falta de apetite' and 
     'dor ao mastigar' and 
     'dor ao engolir').
 
@@ -99,7 +99,7 @@ clause(doenca(catapora) if
     'mal estar' and 
     'fadiga' and 
     'dor de cabeça' and 
-    'perda de apetite' and 
+    'falta de apetite' and 
     'febre').
 
 % 11 - Doença: Bronquite
@@ -155,7 +155,7 @@ clause(doenca(depressao) if
 % 16 - Doença: Labirintite
 clause(doenca(labirintite) if 
     'tontura' and 
-    'vertigens').
+    'vertigens (sensação de giro ou desequilíbrio)').
     
 % 17 - Doença: Leptospirose
 clause(doenca(leptospirose) if 
@@ -249,7 +249,6 @@ question :- write('apresenta dor de cabeça?\n'), read(yes), asserta(clause('dor
 question :- write('apresenta congestão nasal?\n'), read(yes), asserta(clause('congestão nasal' if true)).
 question :- write('apresenta dores musculares?\n'), read(yes), asserta(clause('dores musculares' if true)).
 question :- write('apresenta problemas no olfato ou no paladar?\n'), read(yes), asserta(clause('problemas no olfato ou no paladar' if true)).
-question :- write('apresenta perda de apetite?\n'), read(yes), asserta(clause('perda de apetite' if true)).
 question :- write('apresenta vômito?\n'), read(yes), asserta(clause('vômito' if true)).
 question :- write('apresenta inflamação nos olhos (conjuntivite)?\n'), read(yes), asserta(clause('inflamação nos olhos (conjuntivite)' if true)).
 question :- write('apresenta dores nas articulações?\n'), read(yes), asserta(clause('dores nas articulações' if true)).
@@ -284,7 +283,6 @@ question :- write('apresenta sudorese noturna?\n'), read(yes), asserta(clause('s
 question :- write('apresenta emagrecimento?\n'), read(yes), asserta(clause('emagrecimento' if true)).
 question :- write('apresenta ansiedade?\n'), read(yes), asserta(clause('ansiedade' if true)).
 question :- write('apresenta distúrbios do sono?\n'), read(yes), asserta(clause('distúrbios do sono' if true)).
-question :- write('apresenta alterações de apetite?\n'), read(yes), asserta(clause('alterações de apetite' if true)).
 question :- write('apresenta sentimentos de culpa ou baixa auto-estima?\n'), read(yes), asserta(clause('sentimentos de culpa ou baixa auto-estima' if true)).
 question :- write('apresenta falta de concentração?\n'), read(yes), asserta(clause('falta de concentração' if true)).
 question :- write('apresenta tontura?\n'), read(yes), asserta(clause('tontura' if true)).
@@ -323,7 +321,7 @@ doencaX(covid) :-
 
 % Doença: Febre Amarela
 doencaX(febre_amarela) :- 
-    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: febre; dores musculares; dor de cabeça; perda de apetite; vômito').
+    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: febre; dores musculares; dor de cabeça; falta de apetite; vômito').
 
 % Doença: Febre Maculosa
 doencaX(febre_maculosa) :- 
@@ -351,11 +349,11 @@ doencaX(raiva) :-
 
 % Doença: Caxumba
 doencaX(caxumba) :- 
-    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: febre; inchaço e dor nas glândulas salivares; dor de cabeça; fadiga; fraqueza; perda de apetite; dor ao mastigar; dor ao engolir').
+    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: febre; inchaço e dor nas glândulas salivares; dor de cabeça; fadiga; fraqueza; falta de apetite; dor ao mastigar; dor ao engolir').
 
 % Doença: Catapora
 doencaX(catapora) :- 
-    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: manchas vermelhas na pele; bolhas no corpo; mal estar; fadiga; dor de cabeça; perda de apetite; febre').
+    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: manchas vermelhas na pele; bolhas no corpo; mal estar; fadiga; dor de cabeça; falta de apetite; febre').
 
 % Doença: Bronquite
 doencaX(bronquite) :- 
@@ -380,7 +378,7 @@ doencaX(depressao) :-
 
 % Doença: Labirintite
 doencaX(labirintite) :- 
-    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: tontura; vertigens').
+    write('A doença foi diagnosticada dado que o paciente relatou possuir os seguintes sintomas: tontura; vertigens (sensação de giro ou desequilíbrio)').
     
 % Doença: Leptospirose
 doencaX(leptospirose) :- 

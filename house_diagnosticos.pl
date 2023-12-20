@@ -1,5 +1,6 @@
-%Dener Luis Basilio Theodoro, 201835001
-%Lásaro de Almeida Deodoro, 201835004
+% Dener Luis Basilio Theodoro, 201835001
+% Lásaro de Almeida Deodoro, 201835004
+% Nota 25/25
 
 :- op(800, yfx, if).
 :- op(200, xfy, and).
